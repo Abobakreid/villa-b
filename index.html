@@ -640,7 +640,7 @@
 
       // Face transforms
       let faceTransforms = [
-        [5], // front: 180°
+        [2], // front: 180°
         [1, 5], // back: Flip H + 180°
         [1, 6], // top: Flip H + 270°
         [1, 4], // bottom: Flip H + 90°
@@ -848,27 +848,27 @@
             new THREE.MeshBasicMaterial({
               map: faces[4],
               side: THREE.BackSide,
-            }),
+            }), // Right
             new THREE.MeshBasicMaterial({
               map: faces[5],
               side: THREE.BackSide,
-            }),
+            }), // Left
             new THREE.MeshBasicMaterial({
               map: faces[2],
               side: THREE.BackSide,
-            }),
+            }), // Top
             new THREE.MeshBasicMaterial({
               map: faces[3],
               side: THREE.BackSide,
-            }),
+            }), // Bottom
             new THREE.MeshBasicMaterial({
               map: faces[1],
               side: THREE.BackSide,
-            }),
+            }), // Back
             new THREE.MeshBasicMaterial({
               map: faces[0],
               side: THREE.BackSide,
-            }),
+            }), // Front
           ];
 
           mesh = new THREE.Mesh(geometry, materials);
@@ -1149,5 +1149,3 @@
     </script>
   </body>
 </html>
-
-
